@@ -1,12 +1,27 @@
 # P1-Meter-ESP8266
 Software for the ESP2866 Wemos D1 that sends P1 smart meter data to a Server using a CronAlarm at 5 minutes
 
-### Installation instrucions
-- Make sure that your ESP8266 can be flashed from the Arduino environnment: https://github.com/esp8266/Arduino
-- Place the .php files on your server, create a database and import the .sql file. Open the connect.php and fill this with your credentials.
-- Place all other files from this repository in a directory. Open the .ino file.
-- Adjust WIFI, serverIP settings at the top of the file
-- Compile and flash
+### Installation ESP
+- script works with the latest boardmanager ESP8266.
+- add the libary Cronalarms from Martin Laclaustra.
+- The Cron in the script is set to repeat every 5 minutes.
+
+### If your server has an .htacces en .htpasswd file
+- go to this website https://www.base64encode.org/ 
+- Enter your name and password, something like this "username:password" Please notice the colon ":" in between username and password.
+- Hit the Encode button and write down your code.
+
+![image](https://user-images.githubusercontent.com/94928681/187403982-59c8a2d3-2855-401a-9871-f20d5e2c809f.png)
+
+Scrol in the ino file to this row
+```
+		clientGet.println("Authorization: Basic code=");
+```
+and change it with your own code
+```
+		clientGet.println("Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=");
+```
+
 
 ### Connection of the P1 meter to the ESP8266
 A nice and good working smartmeter can be found on http://enri.nl/pcb/
