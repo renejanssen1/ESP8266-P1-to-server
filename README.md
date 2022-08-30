@@ -1,5 +1,5 @@
 # P1-Meter-ESP8266
-Software for the ESP2866 Wemos D1 that sends P1 smart meter data to a Server (with CRC checking)
+Software for the ESP2866 Wemos D1 that sends P1 smart meter data to a Server using a CronAlarm at 5 minutes
 
 ### Installation instrucions
 - Make sure that your ESP8266 can be flashed from the Arduino environnment: https://github.com/esp8266/Arduino
