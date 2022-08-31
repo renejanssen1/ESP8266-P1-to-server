@@ -6,7 +6,7 @@ Software for the ESP2866 Wemos D1 that sends P1 smart meter data to a Server usi
 - add the library Cronalarms from Martin Laclaustra.
 - The Cron in the script is set to repeat every 5 minutes.
 
-### If your server has an .htacces en .htpasswd file
+### If your server is protected with a .htacces / .htpasswd file
 - go to this website https://www.base64encode.org/ 
 - Enter your name and password, something like this "username:password" Please notice the colon ":" in between username and password.
 - Hit the Encode button and write down your code.
