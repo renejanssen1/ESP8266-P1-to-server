@@ -3,7 +3,7 @@ Software for the ESP2866 Wemos D1 that sends P1 smart meter data to a Server usi
 
 ### Installation ESP
 - script works with the latest boardmanager ESP8266.
-- add the libary Cronalarms from Martin Laclaustra.
+- add the library Cronalarms from Martin Laclaustra.
 - The Cron in the script is set to repeat every 5 minutes.
 
 ### If your server has an .htacces en .htpasswd file
